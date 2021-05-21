@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+   
+
+    <script type="text/javascript">
+        //3 орцтой, нэг орц нь 36 айлтай
+        var utga = prompt("1-108 hoorond toogoo oruulna uu");
+        var orts = 0;
+        var dawhar = 0;
+        var toot = 0;
+       
+        if (utga < 37)
+        {       
+            orts = 1;
+        }
+        else if (utga < 73)
+        {
+            orts = 2;
+            utga = utga - 36;
+        }
+        else
+        {
+            orts = 3;
+            utga = utga - 72;
+        }
+        dawhar = utga / 4;
+        dawhar = Math.ceil(dawhar)
+
+
+        toot = utga % 4;
+        if (toot == 0) {
+            toot == 4;
+        }
+
+
+        document.write(orts + " -р орцны " + dawhar + " -р давхарын "  + toot + " -р хаалга");
+        
+    
+    </script>
+    </head>
+<body>
+<div id="word"></div>
+  
+</body>
+</html>
